@@ -1,0 +1,28 @@
+product:
+  type: kmp/lib
+  platforms: [ jvm, android ]
+
+dependencies:
+  - $compose.runtime
+  - $compose.foundation
+  - $compose.material3
+  - $compose.ui
+  - $compose.components.resources
+  - $compose.preview
+  - $compose.hotReload.runtimeApi
+  - $libs.androidx.lifecycle.viewmodel.compose
+  - $libs.androidx.lifecycle.runtime.compose
+  - $compose.material
+  - org.jetbrains.compose.material:material-icons-extended:1.7.3
+  - net.jthink:jaudiotagger:3.0.1
+
+dependencies@android:
+  - $compose.uiTooling
+
+settings:
+  compose:
+    enabled: true
+    resources:
+      packageName: com.lumi2021.player.resources
+      # Generate public accessors so other modules (and previews) can use Res.*
+      exposedAccessors: true

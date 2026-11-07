@@ -1,0 +1,15 @@
+product: android/app
+
+dependencies:
+  - //src/shared
+  - $libs.androidx.activity.compose
+  - $compose.preview
+  - $compose.uiTooling
+  - androidx.media3:media3-exoplayer:1.11.1
+  - androidx.media3:media3-session:1.11.1
+
+settings:
+  compose: enabled
+  android:
+    namespace: com.lumi2021.player
+    applicationId: com.lumi2021.player

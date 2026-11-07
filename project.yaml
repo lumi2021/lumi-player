@@ -1,0 +1,4 @@
+modules:
+  - src/androidApp
+  - src/desktopApp
+  - src/shared

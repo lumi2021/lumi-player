@@ -1,0 +1,15 @@
+product: jvm/app
+
+dependencies:
+  - //src/shared
+  - $compose.desktop.currentOs
+  - $compose.preview
+  - $libs.kotlinx.coroutines.swing
+  - $libs.logback.classic
+  - uk.co.caprica:vlcj:4.8.3
+  - net.jthink:jaudiotagger:3.0.1
+
+settings:
+  compose: enabled
+  jvm:
+    mainClass: com.lumi2021.player.MainKt
